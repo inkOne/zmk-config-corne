@@ -22,7 +22,7 @@
 // | ADJ/ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | Ü/ß |
 // | CTL/TB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  Ö  | CTL/Ä|
 // | SHFT    |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
-//                    | GUI | LWR |SPC  |   | RSE/ENT | BKSP  | RSE |
+//                    | ALT | GUI | LWR/SPC  |   | RSE/ENT | BKSP  | RSE |
      
                         bindings = <
    &lt ADJUST ESC    &kp Q &kp W &kp E &kp R &kp T      &kp Y &kp U  &kp I     &kp O   &kp P    &mt MINUS LBKT
@@ -34,15 +34,15 @@
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | ADJ/ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// |         |     |     |     |     |     |   |  -  |  =  |  {  |  }  | "|" |  `   |
-// | SHFT    |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |  ~   |
-//                    | GUI | LWR |SPC  |   | RSE/ENT | BKSP  | RSE |
+// | ADJ/ESC |  !  |  "  |  §  |  $  |  %  |   |  & |  /  |  *  |  )  |  =  |       |
+// |         |     |     |     |     |     |   |  * |  #  |  {  |  }  |   ' |  `   |
+// | SHFT    |     |     |     |     |     |   |    |  +  |  [  |  ]  |  <  |  >   |
+//                    | ALT | GUI | LWR/SPC  |   | RSE/ENT | BKSP  | RSE |
 
                         bindings = <
-   &lt ADJUST ESC  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &trans &trans &trans &trans &trans &trans               &kp MINUS &kp EQUAL &kp LBRC &kp RBRC  &kp PIPE &kp GRAVE
-   &kp LSHIFT &trans &trans &trans &trans &trans           &kp UNDER &kp PLUS  &kp LBKT &kp RBKT &kp BSLH &kp TILDE
+   &lt ADJUST ESC  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp LS(8) &kp LPAR &kp RPAR  &transj
+   &trans &trans &trans &trans &trans &trans                     &kp KP_MULTIPLY &kp NON_US_HASH &kp LA(8) &kp LA(9)  &kp PIPE &kp LBKT
+   &kp LSHIFT &trans &trans &trans &trans &trans                 &trans &kp RBKT   &kp LA(5) &kp LA(6) &kp TILDE
                  &kp LALT &kp LGUI  &lt LOWER SPACE       &lt RAISE RET &kp BSPC &mo 2 
                        >;  
                 };
@@ -52,27 +52,28 @@
 // | ADJ/ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // |         | F1  | F2  | F3  | F4  | F5  |   | LFT | DWN |  UP | RGT |     |      |
 // | SHFT    | F6  | F7  | F8  | F9  | F10 |   |     |     |     |     |     |      |
-//                    | GUI | LWR |SPC  |   | RSE/ENT | BKSP  | RSE |
+//                    | ALT | GUI | LWR/SPC  |   | RSE/ENT | BKSP  | RSE |
                         bindings = <
    &lt ADJUST  ESC     &kp N1       &kp N2       &kp N3       &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC
    &trans &kp F1 &kp F2 &kp F3 &kp F4 &kp F5         &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10    &trans &trans &trans &trans &trans &trans
+   &kp LSHFT  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10    &trans &trans &trans &trans &trans                          c
                  &kp LALT &kp LGUI  &lt LOWER SPACE       &lt RAISE RET &kp BSPC &mo 2 
                         >;
                 };
 
                 adjust_layer {
 // -----------------------------------------------------------------------------------------
-// | MUTE |VOLDN|VOLUP| PREV| NEXT| PLAY|   | BT1 | BT2 | BT3 | BT4 | BT5 | BTCLR|
-// | CAPS |     |     |     |     |     |   |     |     |     |     |     |      |
-// |      |     |     |     | BRID| BRIU|   |     |     |     |     |     |      |
-//                    | GUI | LWR |SPC  |   | RSE/ENT | BKSP  | RSE |
+// |      |     |     |     |     |      |     | PREV| PLAY| NEXT|  MUTE | VOLDN | VOLUP| 
+// | BT1  | BT2 | BT3 | BT4 | BT5 | BTCLR|     |     |     |     |       | BRID  | BRIU |
+// | CAPS |     |     |     |      |     |     |     |     |     |      |
+//                | ALT | GUI | LWR/SPC  |   | RSE/ENT | BKSP  | RSE |
                         bindings = <
-   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_NEXT &kp C_PP   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR 
-   &trans &trans &trans &trans &trans &trans                                 &trans &trans &trans &trans &trans &trans 
-   &kp CAPS &trans  &trans &trans   &kp C_BRI_DN  &kp C_BRI_UP               &trans &trans &trans &trans &trans &trans
+   
+      &trans &trans &trans &trans &trans &trans                                         &kp C_PREV &kp C_PP &kp C_NEXT   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  
+      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR       &trans &trans &trans &trans &kp C_BRI_DN  &kp C_BRI_UP
+      &kp CAPS &trans  &trans &trans &trans &trans                &trans &trans &trans &trans &trans &trans
                                         &trans &trans &trans                 &trans &trans &trans 
                         >;
                 };
         };
-};
+}; 
