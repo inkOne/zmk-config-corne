@@ -34,15 +34,15 @@
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | ADJ/ESC |  !  |  "  |  §  |  $  |  %  |   |  & |  /  |  *  |  )  |  =  |       |
-// |         |     |     |     |     |     |   |  * |  #  |  {  |  }  |   ' |  `   |
-// | SHFT    |     |     |     |     |     |   |    |  +  |  [  |  ]  |  <  |  >   |
+// | ADJ/ESC |  !  |  "  |  §  |  $  |  %  |   |  & |  /  |  ()  |  )  |  =  |      |
+// |         |     |     |     |     |     |   |  * |  #  |  {  |  }   |  <  |  >   | 
+// | SHFT    |     |     |     |     |     |   | '  |  `  |  [  |  ]   |  +  | SHFT |
 //                    | ALT | GUI | LWR/SPC  |   | RSE/ENT | BKSP  | RSE |
 
                         bindings = <
    &lt ADJUST ESC  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp LS(N8) &kp LPAR &kp RPAR  &trans
-   &trans &trans &trans &trans &trans &trans                     &kp KP_MULTIPLY &kp NON_US_HASH &kp LA(N8) &kp LA(N9)  &kp PIPE &kp PLUS
-   &kp LSHIFT &trans &trans &trans &trans &trans                 &trans &kp RBKT   &kp LA(N5) &kp LA(N6)  &kp GRAVE &kp TILDE
+   &trans &trans &trans &trans &trans &trans                     &kp KP_MULTIPLY &kp NON_US_HASH &kp LA(N8) &kp LA(N9)  &kp GRAVE &kp TILDE
+   &kp LSHIFT &trans &trans &trans &trans &trans                 &kp PIPE &kp PLUS &kp LA(N5) &kp LA(N6) &kp RBKT &kp RSHIFT
                  &kp LALT &kp LGUI  &lt LOWER SPACE       &lt RAISE RET &kp BSPC &mo 2 
                        >;  
                 };
