@@ -25,9 +25,9 @@
 //                    | ALT | GUI | LWR/SPC  |   | RSE/ENT | BKSP  | RSE |
      
                         bindings = <
-   &lt ADJUST ESC    &kp Q &kp W &kp E &kp R &kp T      &kp Y &kp U  &kp I     &kp O   &kp P    &mt MINUS LBKT
-   &mt LCTRL TAB &kp A &kp S &kp D &kp F &kp G  &kp H &kp J  &kp K     &kp L   &kp SEMI &mt RCTRL SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B      &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT 
+   &lt ADJUST ESC    &kp Q &kp W &kp E &kp R &kp T      &kp Y &kp U  &kp I  &kp O   &kp P    &mt MINUS LBKT
+   &mt LCTRL TAB     &kp A &kp S &kp D &kp F &kp G          &kp H &kp J  &kp K  &kp L   &kp SEMI &mt RCTRL SQT
+   &kp LSHFT         &kp Z &kp X &kp C &kp V &kp B              &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT 
                  &kp LALT &kp LGUI  &lt LOWER SPACE       &lt RAISE RET &kp BSPC &mo 2 
                         >;
                 };
@@ -40,9 +40,9 @@
 //                    | ALT | GUI | LWR/SPC  |   | RSE/ENT | BKSP  | RSE |
 
                         bindings = <
-   &lt ADJUST ESC  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp LS(8) &kp LPAR &kp RPAR  &trans
-   &trans &trans &trans &trans &trans &trans                     &kp KP_MULTIPLY &kp NON_US_HASH &kp LA(8) &kp LA(9)  &kp PIPE &kp LBKT
-   &kp LSHIFT &trans &trans &trans &trans &trans                 &trans &kp RBKT   &kp LA(5) &kp LA(6) &kp TILDE
+   &lt ADJUST ESC  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp LS(N8) &kp LPAR &kp RPAR  &trans
+   &trans &trans &trans &trans &trans &trans                     &kp KP_MULTIPLY &kp NON_US_HASH &kp LA(N8) &kp LA(N9)  &kp PIPE &kp LBKT
+   &kp LSHIFT &trans &trans &trans &trans &trans                 &trans &kp RBKT   &kp LA(N5) &kp LA(N6) &kp TILDE
                  &kp LALT &kp LGUI  &lt LOWER SPACE       &lt RAISE RET &kp BSPC &mo 2 
                        >;  
                 };
