@@ -21,7 +21,7 @@
 // -----------------------------------------------------------------------------------------
 // | ADJ/ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | Ü/ß |
 // | CTL/TB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  Ö  | Ä    |
-// | SHFT    |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
+// | SHFT    |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  -  | SHFT |
 //                    | ALT | GUI | LWR/SPC  |   | RSE/ENT | BKSP  | DEL |
      
                         bindings = <
