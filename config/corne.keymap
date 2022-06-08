@@ -19,13 +19,13 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// | ADJ/ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | Ü/ß |
+// | ADJ/ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | Ü |
 // | CTL/TB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  Ö  | Ä    |
 // | SHFT    |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  -  | SHFT |
 //                    | ALT | GUI | LWR/SPC  |   | RSE/ENT | BKSP  | DEL |
      
                         bindings = <
-   &lt ADJUST ESC    &kp Q &kp W &kp E &kp R &kp T      &kp Y &kp U  &kp I  &kp O   &kp P    &mt MINUS LBKT
+   &lt ADJUST ESC    &kp Q &kp W &kp E &kp R &kp T      &kp Y &kp U  &kp I  &kp O   &kp P    &kp MINUS 
    &mt LCTRL TAB     &kp A &kp S &kp D &kp F &kp G      &kp H &kp J  &kp K  &kp L   &kp SEMI &kp SQT
    &kp LSHFT         &kp Z &kp X &kp C &kp V &kp B      &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT 
                  &kp LALT &kp LGUI  &lt LOWER SPACE       &lt RAISE RET &kp BSPC &kp DEL 
@@ -34,13 +34,13 @@
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | ADJ/ESC |  !  |  "  |  §  |  $  |  %  |   |  & |  /  |  ()  |  )  |  =  |      |
+// | ADJ/ESC |  !  |  "  |  §  |  $  |  %  |   |  & |  /  |  (  |  )  |  =  |   ß   |
 // |         |     |     |     |     |     |   |  * |  #  |  {  |  }   |  <  |  >   | 
 // | SHFT    |     |     |     |     |     |   | '  |  `  |  [  |  ]   |  +  | SHFT |
 //                    | ALT | GUI | LWR/SPC  |   | RSE/ENT | BKSP  | DEL |
 
                         bindings = <
-   &lt ADJUST ESC  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp LS(N8) &kp LPAR &kp RPAR  &trans
+   &lt ADJUST ESC  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp LS(N8) &kp LPAR &kp RPAR  &kp LBKT
    &trans &trans &trans &trans &trans &trans                     &kp KP_MULTIPLY &kp NON_US_HASH &kp LA(N8) &kp LA(N9)  &kp GRAVE &kp TILDE
    &kp LSHIFT &trans &trans &trans &trans &trans                 &kp PIPE &kp PLUS &kp LA(N5) &kp LA(N6) &kp RBKT &kp RSHIFT
                  &kp LALT &kp LGUI  &lt LOWER SPACE       &lt RAISE RET &kp BSPC &kp DEL
@@ -49,12 +49,12 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// | ADJ/ESC |  1  |  2  |  3  |  4  |  5  |   |  6   |  7  | 8   |  9  |  0  | BKSP |
+// | ADJ/ESC |  1  |  2  |  3  |  4  |  5  |   |  6   |  7  | 8   |  9  |  0  |      |
 // |         | F1  | F2  | F3  | F4  | F5  |   | LFT  | DWN | UP  | RGT |     |      |
 // | SHFT    | F6  | F7  | F8  | F9  | F10 |   | home | PDN | PUP | END |     |      |
 //                    | ALT | GUI | LWR/SPC  |   | RSE/ENT | BKSP | DEL |
                         bindings = <
-   &lt ADJUST  ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC
+   &lt ADJUST  ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &trans
    &trans &kp F1 &kp F2 &kp F3 &kp F4 &kp F5         &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
    &kp LSHFT  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10    &kp HOME &kp PG_DN &kp PG_UP &kp END &trans &kp RSHIFT
                  &kp LALT &kp LGUI  &lt LOWER SPACE       &lt RAISE RET &kp BSPC &kp DEL
