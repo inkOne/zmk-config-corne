@@ -186,7 +186,7 @@
 // | BT1  | BT2 | BT3 | BT4 | BT5 | BTCLR|     |     |     |     |       | BRID  | BRIU |
 // | CAPS |     |     |     |      |     |     |     |     |     |      |
 //                | ALT | GUI | LWR/SPC  |   | RSE/ENT | BKSP  | DEL |
-                    label = "FUN";
+                    label = "MET";
                     bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &trans        &trans        &trans        &trans        &trans        &trans              &trans        &kp LBKT        &trans        &trans        &trans        &trans
