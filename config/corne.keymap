@@ -6,7 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h> 
+#include <dt-bindings/zmk/bt.h>
 
 #define DEF 0
 #define SYM 1
@@ -132,7 +132,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &trans        &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT         &kp CARET     &kp AMPS      &kp LS(N8)     &kp LPAR     &kp RPAR       &trans
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &trans        &trans        &trans        &trans        &trans        &trans            &kp KP_MULTIPLY &kp NON_US_HASH &kp LA(N5) &kp LA(N6)  &kp GRAVE      &trans
+    &trans        &trans        &trans        &trans        &kp LSHFT        &trans            &kp KP_MULTIPLY &kp NON_US_HASH &kp LA(N5) &kp LA(N6)  &kp GRAVE      &trans
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &trans        &trans        &trans        &trans        &trans        &trans            &kp PIPE      &kp PLUS      &kp LA(N8)    &kp LA(N9)    &kp RBKT      &trans
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
@@ -163,7 +163,7 @@
 
                 function_layer {
 // -----------------------------------------------------------------------------------------
-// |      |     |     |     |     |      |     | PREV| PLAY| NEXT|  MUTE | VOLDN | VOLUP| 
+// |      |     |     |     |     |      |     | PREV| PLAY| NEXT|  MUTE | VOLDN | VOLUP|
 // | BT1  | BT2 | BT3 | BT4 | BT5 | BTCLR|     |     |     |     |       | BRID  | BRIU |
 // | CAPS |     |     |     |      |     |     |     |     |     |      |
 //                | ALT | GUI | LWR/SPC  |   | RSE/ENT | BKSP  | DEL |
@@ -172,9 +172,9 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &trans        &trans        &trans        &trans        &trans        &trans            &kp C_PREV    &kp C_PP      &kp C_NEXT     &trans        &trans        &trans
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR        &kp C_MUTE    &kp C_VOL_DN &kp C_VOL_UP   &trans        &trans        &trans
+    &trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4       &kp C_MUTE    &kp C_VOL_DN &kp C_VOL_UP   &trans        &trans        &trans
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &trans        &kp CAPS      &trans        &trans        &trans        &trans            &kp C_BRI_DN  &kp C_BRI_UP  &trans        &trans        &trans        &trans
+    &trans        &kp CAPS      &trans        &trans        &trans         &bt BT_CLR       &kp C_BRI_DN  &kp C_BRI_UP  &trans        &trans        &trans        &trans
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &mo FUN       &lt TAB ESC   &lt SYM SPACE     &lt NAV RET   &lt MET BSPC        &kp DEL
 //                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
