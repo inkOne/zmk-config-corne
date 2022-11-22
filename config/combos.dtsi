@@ -14,7 +14,14 @@
   │ 10  11  12  13  14 │ │ 15  16  17  18  19 │
   │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
   ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
-              ╰────────╯ ╰────────╯            */
+              ╰────────╯ ╰────────╯
+
+   0   1  2  3  4  5    6  7  8  9 10 11
+   12 13 14 15 16 17   18 19 20 21 22 23
+   24 25 26 27 28 29   30 31 32 33 34 35
+            36 37 38   39 49 41
+
+              */
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
         combo_##NAME { \
@@ -28,19 +35,10 @@
     combos {
         compatible = "zmk,combos";
 
-COMBO(semi,   &kp SEMI,      6  7, DEF , 40)
-COMBO(lpar,   &kp LPAR,     12 13, DEF , 40)
-COMBO(rpar,   &kp RPAR,     16 17, DEF , 40)
-COMBO(lbkt,   &kp LBKT,     11 12, DEF , 40)
-COMBO(rbkt,   &kp RBKT,     17 18, DEF , 40)
-COMBO(tab,    &kp TAB,      11 13, DEF , 40)
-COMBO(bspc,   &kp BSPC,     16 18, DEF , 40)
-COMBO(grave,  &kp GRAVE,    22 23, DEF , 40)
-COMBO(tilde,  &kp TILDE,    21 22, DEF , 40)
-COMBO(bslh,   &kp BSLH,     26 27, DEF , 40)
-COMBO(pipe,   &kp PIPE,     27 28, DEF , 40)
-
-COMBO(capswd, &caps_word,   13 16, DEF , 60)
+COMBO(rpar,   &kp LS(N8),    8  9, DEF , 40)
+COMBO(lpar,   &kp LPAR,      9 10, DEF , 40)
+COMBO(lbkt,   &kp LA(N5),     16 17, DEF , 40)
+COMBO(rbkt,   &kp LA(N6),     17 18, DEF , 40)
 
     };
 };
