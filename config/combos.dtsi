@@ -35,15 +35,13 @@
     combos {
         compatible = "zmk,combos";
 
-COMBO(rpar,   &kp LS(N8),      8  9, DEF , 40)
-COMBO(lpar,   &kp LPAR,        9 10, DEF , 40)
-COMBO(lbkt,   &kp LA(N5),     16 17, DEF , 40)
-COMBO(rbkt,   &kp LA(N6),     17 18, DEF , 40)
+COMBO(rpar,   &kp LS(N8),      7  8, DEF , 40)
+COMBO(lpar,   &kp LPAR,        8  9, DEF , 40)
+COMBO(lbkt,   &kp LA(N5),     19 20, DEF , 40)
+COMBO(rbkt,   &kp LA(N6),     20 21, DEF , 40)
 
     };
 };
 
 
-
-
-kuuuiizzuziuzkhkjlhkjh,n,mn,mn888
+()ui()
