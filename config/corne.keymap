@@ -101,9 +101,9 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  |  K            .        |  O        |  ,         |  Y  |      |  V  |  G          |  C        |  L        |  ß / Z         | |
-// |  |  CTRL / H  |  GUI / A  |  ALT / I  |  SHFT / U  |  D  |      |  T  |  SHFT / R   |  ALT / N  |  GUI / S  |  CTRL / T / F  | |
-// |  |  X         |  Q        |  Ä        |  Ü         |  Ö  |      |  N  |  M          |  ,        |  .        |  -         | |
+// |  |  X         |    J        |  O        |  V       |  Y  |      |  ß  |  G          |  C        |  L        |   Z        | |
+// |  |  CTRL / H  |  GUI / A  |  ALT / E  |  SHFT / I  |  U  |      |  D  |  SHFT / T   |  ALT / R  |  GUI / N  |  CTRL / S  | |
+// |  |  K         |  Q        |  Ä        |  Ü         |  Ö  |      |  B  |  P          |  W        |  M        |  F         | |
 //                                  | ESC | TAB | SYM / SPC  |            | NAV / ENT | MET / BKSP  | DEL |
                         label = "DEF";
                         bindings = <
